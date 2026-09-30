@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>LocalInventoryExport</AssemblyName>
+    <RootNamespace>LocalInventoryExport</RootNamespace>
+    <Deterministic>true</Deterministic>
+    <PathMap>$(MSBuildProjectDirectory)=/_/LocalInventoryExport</PathMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FrooxEngine" HintPath="$(ResonitePath)\FrooxEngine.dll" Private="false" />
+    <Reference Include="FrooxEngine.Store" HintPath="$(ResonitePath)\FrooxEngine.Store.dll" Private="false" />
+    <Reference Include="SkyFrost.Base" HintPath="$(ResonitePath)\SkyFrost.Base.dll" Private="false" />
+    <Reference Include="SkyFrost.Base.Models" HintPath="$(ResonitePath)\SkyFrost.Base.Models.dll" Private="false" />
+    <Reference Include="Elements.Core" HintPath="$(ResonitePath)\Elements.Core.dll" Private="false" />
+    <Reference Include="Elements.Assets" HintPath="$(ResonitePath)\Elements.Assets.dll" Private="false" />
+    <Reference Include="Renderite.Shared" HintPath="$(ResonitePath)\Renderite.Shared.dll" Private="false" />
+    <PackageReference Include="ResoniteModLoader" Version="5.0.1" ExcludeAssets="runtime" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "values": {
+    "throttle_mode": "Both",
+    "request_delay_ms": 1000,
+    "bandwidth_kb_per_second": 25600,
+    "pause_after_failures": 1,
+    "auto_resume_minutes": 0,
+    "save_preview_images": true,
+    "show_dash_screens": true,
+    "auto_refresh": true,
+    "sort_mode": "Saved time",
+    "builtin_performance_patches": true,
+    "thumbnail_max_size": 128
+  }
+}
